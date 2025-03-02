@@ -1,0 +1,39 @@
+/* Custom styles */
+
+.card {
+
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  text-align: center;
+  flex-grow: 1;
+  padding-bottom: 10px; /* Adding padding at the bottom for spacing */
+}
+.card-img-top {
+  width: 100%;
+  height: 200px; /* All images will have equal height */
+  object-fit: cover;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-body img {
+  width: 100%;
+  height: 200px; /* Ensuring the image in modal also fills the area */
+  object-fit: cover;
+  margin-bottom: 20px; /* Adding space between the image and text */
+}
+.modal-body h5 {
+  margin-top: 15px;
+}
+/* Position the buttons at the bottom of the card */
+.card-footer {
+  margin-top: auto; /* Pushes the footer (buttons) to the bottom */
+  padding: 10px 0;
+}
+.card-footer .btn {
+  margin-bottom: 5px; /* Adds some spacing between buttons */
+}

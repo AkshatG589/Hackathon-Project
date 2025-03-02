@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script type="module" src="register.js"></script> -->
+</head>
+<body>
+
+    <!-- 🌿 Falling Leaves Container -->
+    <div id="leaves-container"></div>
+
+    <!-- 🌿 Login Box -->
+    <div class="box" id="login-box">
+        <h2 class="title">Virtual Herbal Garden</h2>
+        <div class="input-box">
+            <input type="text" placeholder="Username" id="login-username" aria-required="">
+        </div>
+        <div class="input-box">
+            <input type="password" id="login-password" placeholder="Password" requierd>
+        </div>
+        <button class="btn sign-In">Sign In</button>
+        <div class="bottom-links">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don't have an account? <a onclick="openSignup()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- 🌿 Signup Box -->
+    <div class="box" id="signup-box">
+        <h2>Create an Account</h2>
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" id="name" requierd>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="Email" id="signup-email" requierd>
+        </div>
+        <div class="input-box">
+            <input type="password" id="signup-password" placeholder="Password" requierd>
+        </div>
+        <button class="btn register">Register</button>
+        <div class="bottom-links">
+            <p>Already have an account? <a onclick="openLogin()">Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

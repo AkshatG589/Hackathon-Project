@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lilita+One&display=swap');
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; 
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2e7d32, #81c784);
+    overflow: hidden;
+    position: relative;
+}
+/* .title{
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+/* 🌿 Falling Leaves */
+.leaf {
+    position: absolute;
+    top: -50px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/Images/leaf.svg'); /* Transparent Leaf Image */
+    background-size: cover;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* 🌿 Glassmorphism Box */
+.box {
+    width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: absolute;
+    top: -300px;
+    opacity: 0;
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+/* 🌿 Input Fields */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-50px) translateY(-50px);
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🌿 Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.btn:hover {
+    background: #388e3c;
+}
+
+/* 🌿 Bottom Links */
+.bottom-links {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0;
+}
+
+.bottom-links a {
+    color: #c8e6c9;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bottom-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hide Signup Box Initially */
+#signup-box {
+    display: none;
+}

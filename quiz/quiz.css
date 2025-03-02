@@ -1,0 +1,30 @@
+/* Additional custom styling */
+
+body {
+
+    font-family: 'Arial', sans-serif;
+}
+
+#quiz-container {
+    min-height: 300px;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+#navigation {
+    margin-top: 20px;
+}
+
+#score-container {
+    font-size: 1.5rem;
+}
+
+#result-message {
+    font-size: 1.2rem;
+
+}
