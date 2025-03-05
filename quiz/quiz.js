@@ -56,6 +56,7 @@ function loadQuestion() {
         const answerInput = document.createElement('input');
         answerInput.type = 'radio';
         answerInput.name = 'answer';
+        answerInput.classList = 'me-3';
         answerInput.value = index;
         answerInput.onclick = () => handleAnswer(index);
 
@@ -99,12 +100,22 @@ function showScore() {
     scoreContainer.style.display = 'block'; // Show the score container
 
     // Animate the score container's appearance with GSAP
-    gsap.fromTo("#score-container", 
+    gsap.fromTo("#score-container",
         { opacity: 0, scale: 0.5 }, // Initial state
         { opacity: 1, scale: 1, duration: 1 } // Final state with fade-in and scale-up
     );
 }
+//to restart 
+document.getElementById("Restart").addEventListener("click", () => {
+    // alert("hello")
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    scoreContainer.style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
 
+    loadQuestion();
+})
 // Handle previous button click
 prevButton.onclick = () => {
     currentQuestionIndex--;
@@ -126,4 +137,4 @@ submitButton.onclick = () => {
 
 // Load the first question
 loadQuestion()
-;
+    ;

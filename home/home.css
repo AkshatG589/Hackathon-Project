@@ -9,6 +9,9 @@
     overflow: hidden;
     padding-bottom: 10px;
 }*/
+h4,h5,h2{
+  overflow: hidden;
+}
 .bg-container-color{
     background-color: #E3E3E3 !important;
     padding:10px;
