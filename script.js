@@ -44,7 +44,7 @@ document.querySelector(".register").addEventListener("click",(event)=>{
     if (name === "" || email === "" || password === "") {
         alert("Please fill in all fields.");
     } else {
-        window.location.href = "/animation/animation.html"; // Redirect to animation page
+        window.location.href = "/contact/animation/animation.html"; // Redirect to animation page
     }
     // window.location.href = "animation.html";
 })
@@ -56,7 +56,7 @@ document.querySelector(".sign-In").addEventListener("click",(event)=>{
     if (username === "" || password === "") {
         alert("Please fill in all fields.");
     } else {
-        window.location.href = "/animation/animation.html"; // Redirect to animation page
+        window.location.href = "/contact/animation/animation.html"; // Redirect to animation page
     }
     // window.location.href = "animation.html";
 })
