@@ -12,5 +12,5 @@ document.getElementById("changePage").addEventListener("click",()=>{
     window.location.href = "/garden/garden.html";
 })
 document.getElementById("demo").addEventListener("click",()=>{
-    window.loaction.href = "/tour/tour.html"
+    alert("This page is under maintenance");
 })
